@@ -86,6 +86,12 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
+                    <a
+                        href="/"
+                        className="text-lg font-semibold leading-6 text-gray-900"
+                    >
+                        Home
+                    </a>
                     <Dropdown name={"Services"} data={services} />
                     <a
                         href="/pricing"
@@ -233,7 +239,8 @@ export default function Navbar() {
                                     href="/free-trail"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
-                                    Free Trail
+                                    Free Trail{" "}
+                                    <span aria-hidden="true">&rarr;</span>
                                 </a>
                             </div>
                             <div className="py-6 space-x-4">
