@@ -3,7 +3,7 @@ import Carousal from "./Carousal";
 
 export default function Main() {
     return (
-        <main className="mx-10 h-screen md:h-[70vh] grid place-items-center">
+        <main className="mx-10 h-auto md:h-[70vh] grid place-items-center select-none">
             <div className="w-full max-w-7xl mx-auto h-full grid place-items-center">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 place-items-center items-center overflow-hidden">
                     <div className="w-auto max-w-[600px] space-y-4 p-4">
@@ -21,7 +21,7 @@ export default function Main() {
                                 Retouching, Post Production,
                             </span>{" "}
                             &{" "}
-                            <span className="font-semibold border-b-4 border-yellow-400 hover:bg-yellow-400 duration-500">
+                            <span className="font-semibold border-b-4 border-orange-400 hover:bg-orange-400 duration-500">
                                 E-commerce Solution
                             </span>{" "}
                             - all from one source.
@@ -44,7 +44,7 @@ export default function Main() {
                             IMAGE
                         </div>
 
-                        <div className="space-x-6">
+                        <div className="space-x-4 md:space-x-6 mx-auto">
                             <a href="/free-trail">
                                 <button className="px-4 py-2 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
                                     Free Trail
@@ -57,9 +57,7 @@ export default function Main() {
                             </a>
                         </div>
                     </div>
-                    <div>
-                        <Carousal />
-                    </div>
+                    <div>{/* <Carousal /> */}</div>
                 </div>
             </div>
         </main>

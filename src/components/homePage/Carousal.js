@@ -1,4 +1,7 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 const images = [
     {
@@ -35,18 +38,44 @@ const images = [
     },
 ];
 
-export default function Carousal() {
+export default function Carousel() {
     return (
-        <div className="h-full overflow-x-auto hidden sm:block">
-            <section className="flex gallery">
+        <div className="mx-auto">
+            <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                slidesPerView={"auto"}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2.5,
+                }}
+                pagination={{ el: ".swiper-pagination", clickable: true }}
+                navigation={{
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    clickable: true,
+                }}
+                modules={[EffectCoverflow, Pagination, Navigation]}
+                className="h-auto w-auto py-8 relative"
+            >
                 {images.map((image) => (
-                    <article className="card" key={image?.id}>
-                        <figure>
-                            <img src={image?.img} alt="img" className="w-auto h-full" />
-                        </figure>
-                    </article>
+                    <SwiperSlide key={image.id}>
+                        <img
+                            src={image.img}
+                            alt="slide_image"
+                            className="w-auto h-auto rounded-lg"
+                        />
+                    </SwiperSlide>
                 ))}
-            </section>
+
+                <div className="relative bottom-8 flex items-center justify-center">
+                    <div className="relative w-auto bottom-4"></div>
+                </div>
+            </Swiper>
         </div>
     );
 }
