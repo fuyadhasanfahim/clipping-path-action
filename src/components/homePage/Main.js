@@ -3,7 +3,7 @@ import Carousal from "./Carousal";
 
 export default function Main() {
     return (
-        <main className="mx-10 h-screen sm:h-auto md:h-[70vh] grid place-items-center select-none">
+        <main className="mx-10 h-screen sm:h-auto md:h-[70vh] grid place-items-center select-none my-10">
             <div className="w-full max-w-7xl mx-auto h-full grid place-items-center">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 place-items-center items-center overflow-hidden">
                     <div className="w-auto max-w-[600px] space-y-4">
