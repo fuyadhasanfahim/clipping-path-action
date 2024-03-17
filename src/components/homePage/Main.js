@@ -3,10 +3,10 @@ import Carousal from "./Carousal";
 
 export default function Main() {
     return (
-        <main className="mx-10 h-auto md:h-[70vh] grid place-items-center select-none">
+        <main className="mx-10 h-screen sm:h-auto md:h-[70vh] grid place-items-center select-none">
             <div className="w-full max-w-7xl mx-auto h-full grid place-items-center">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 place-items-center items-center overflow-hidden">
-                    <div className="w-auto max-w-[600px] space-y-4 p-4">
+                    <div className="w-auto max-w-[600px] space-y-4">
                         <div className="mb-6 space-y-2">
                             <h4 className="text-orange-600 text-2xl font-bold uppercase">
                                 Clipping Path Action:
@@ -44,14 +44,14 @@ export default function Main() {
                             IMAGE
                         </div>
 
-                        <div className="space-x-4 md:space-x-6 mx-auto">
+                        <div className="space-x-2 md:space-x-4 mx-auto">
                             <a href="/free-trail">
-                                <button className="px-4 py-2 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
+                                <button className="px-4 py-1 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
                                     Free Trail
                                 </button>
                             </a>
                             <a href="/login">
-                                <button className="px-4 py-2 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
+                                <button className="px-4 py-1 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
                                     Get Quote
                                 </button>
                             </a>
