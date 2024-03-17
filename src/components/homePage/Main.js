@@ -44,7 +44,7 @@ export default function Main() {
                             IMAGE
                         </div>
 
-                        <div className="space-x-2 md:space-x-4 mx-auto">
+                        <div className="space-x-2 md:space-x-4 mx-auto text-center">
                             <a href="/free-trail">
                                 <button className="px-4 py-1 bg-orange-600 rounded-md shadow-md text-lg font-medium text-gray-100">
                                     Free Trail
