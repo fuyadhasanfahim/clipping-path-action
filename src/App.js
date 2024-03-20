@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                 <Route exact path="/" element={<HomePage />} />
                 <Route exact path="/login" element={<LoginPage />} />
                 <Route exact path="/sign-up" element={<SignUpPage />} />
+                <Route exact path="/contact-us" element={<ContactPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter>
