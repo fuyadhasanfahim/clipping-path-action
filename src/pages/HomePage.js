@@ -7,6 +7,9 @@ import Portfolio from "../components/homePage/Portfolio";
 import Skills from "../components/homePage/Skills";
 import GiveATry from "../components/homePage/GiveATry";
 import WhyUs from "../components/homePage/WhyUs";
+import Reviews from "../components/homePage/Reviews";
+import FreeTrail from "../components/homePage/FreeTrail";
+import TakeMe from "../components/homePage/TakeMe";
 
 export default function HomePage() {
     return (
@@ -19,6 +22,9 @@ export default function HomePage() {
             <Skills />
             <GiveATry />
             <WhyUs />
+            <Reviews />
+            <FreeTrail />
+            <TakeMe />
         </>
     );
 }

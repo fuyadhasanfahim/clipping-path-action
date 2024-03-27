@@ -8,6 +8,7 @@ import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import ContactPage from "./pages/ContactPage";
+import Footer from "./components/shared/Footer";
 
 export default function App() {
     return (
@@ -21,6 +22,7 @@ export default function App() {
                 <Route exact path="/contact-us" element={<ContactPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
